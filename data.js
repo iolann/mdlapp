@@ -1,24 +1,40 @@
 let products = [
-    { id: 1, name: "Chocolat Chaud", price: 0.40, stock: 50, minStock: 5, category: "Boisson", image: "image/benco.jpg" },
-    { id: 2, name: "Café", price: 1.00, stock: 50, minStock: 10, category: "Boisson", image: "image/café.jpg" },
-    { id: 3, name: "Café au lait", price: 1.00, stock: 30, minStock: 5, category: "Boisson", image: "image/caféaulait.jpg" },
-    { id: 4, name: "Coca-Cola", price: 1.00, stock: 40, minStock: 5, category: "Boisson", image: "image/cocacola.jpg" },
-    { id: 5, name: "Oasis Pomme-Cassis", price: 1.00, stock: 40, minStock: 5, category: "Boisson", image: "image/oasispommecasis.jpg" },
-    { id: 6, name: "Lipton", price: 1.00, stock: 24, minStock: 5, category: "Boisson", image: "image/lipton.jpg" },
-    { id: 7, name: "Sirop", price: 0.50, stock: 25, minStock: 5, category: "Boisson", image: "image/sirop.jpg" },
-    { id: 8, name: "Bouteille Sirop", price: 0.30, stock: 40, minStock: 5, category: "Boisson", image: "image/siropbouteille.jpg" },
-    { id: 9, name: "Diabolo", price: 1.50, stock: 40, minStock: 5, category: "Boisson", image: "image/diabolo.jpg" },
-    { id: 10, name: "Thé", price: 2.00, stock: 40, minStock: 5, category: "Boisson", image: "image/thé.jpg" },
-    { id: 11, name: "Chips BBQ", price: 3.50, stock: 40, minStock: 5, category: "Salé", image: "image/chipsbbq.jpg" },
-    { id: 12, name: "Chips Nature", price: 1.50, stock: 40, minStock: 5, category: "Salé", image: "image/chipsnature.jpg" },
-    { id: 13, name: "Chips Poulet", price: 2.00, stock: 40, minStock: 5, category: "Salé", image: "image/chipspouletroti.jpg" },
-    { id: 14, name: "Saucisson", price: 2.50, stock: 40, minStock: 5, category: "Salé", image: "image/saucisson.jpg" },
-    { id: 15, name: "Croissant", price: 1.50, stock: 40, minStock: 5, category: "Sucré", image: "image/croissant.jpg" },
-    { id: 16, name: "Twix", price: 1.50, stock: 40, minStock: 5, category: "Sucré", image: "image/twix.jpg" },
-    { id: 17, name: "Oréo", price: 1.50, stock: 40, minStock: 5, category: "Sucré", image: "image/oréo.jpg" },
-    { id: 18, name: "M&M's", price: 2.00, stock: 40, minStock: 5, category: "Sucré", image: "image/M&Ms.jpg" },
-    { id: 19, name: "Bonbon", price: 2.50, stock: 40, minStock: 5, category: "Sucré", image: "image/bonbons.jpg" },
-    { id: 20, name: "Crêpe", price: 1.50, stock: 40, minStock: 5, category: "Sucré", image: "image/crepe.jpg" },
+    { id: 1, name: "Chocolat Chaud", price: 0.40, stock: 0, minStock: 5, category: "Boisson", image: "image/benco.jpg" },
+    { id: 2, name: "Café", price: 0.30, stock: 0, minStock: 5, category: "Boisson", image: "image/café.jpg" },
+    { id: 3, name: "Café au lait", price: 0.40, stock: 0, minStock: 5, category: "Boisson", image: "image/caféaulait.jpg" },
+    { id: 4, name: "Coca-Cola", price: 1.00, stock: 0, minStock: 5, category: "Boisson", image: "image/cocacola.jpg" },
+    { id: 5, name: "Oasis Pomme-Cassis", price: 1.00, stock: 0, minStock: 5, category: "Boisson", image: "image/oasispommecasis.jpg" },
+    { id: 6, name: "Lipton", price: 1.00, stock: 0, minStock: 5, category: "Boisson", image: "image/lipton.jpg" },
+    { id: 7, name: "Recharge Sirop", price: 0.20, stock: 0, minStock: 5, category: "Boisson", image: "image/sirop.jpg" },
+    { id: 8, name: "Bouteille Sirop", price: 0.50, stock: 0, minStock: 5, category: "Boisson", image: "image/siropbouteille.jpg" },
+    { id: 9, name: "Diabolo", price: 1.00, stock: 0, minStock: 5, category: "Boisson", image: "image/diabolo.jpg" },
+    { id: 10, name: "Thé", price: 0.30, stock: 0, minStock: 5, category: "Boisson", image: "image/thé.jpg" },
+    { id: 11, name: "Chips BBQ", price: 0.60, stock: 0, minStock: 5, category: "Salé", image: "image/chipsbbq.jpg" },
+    { id: 12, name: "Chips Nature", price: 0.50, stock: 0, minStock: 5, category: "Salé", image: "image/chipsnature.jpg" },
+    { id: 13, name: "Chips Poulet", price: 0.60, stock: 0, minStock: 5, category: "Salé", image: "image/chipspouletroti.jpg" },
+    { id: 14, name: "Saucisson", price: 3.00, stock: 0, minStock: 5, category: "Salé", image: "image/saucisson.jpg" },
+    { id: 15, name: "Croissant", price: 0.50, stock: 0, minStock: 5, category: "Sucré", image: "image/croissant.jpg" },
+    { id: 16, name: "Twix", price: 0.80, stock: 0, minStock: 5, category: "Sucré", image: "image/twix.jpg" },
+    { id: 17, name: "Oréo", price: 0.50, stock: 0, minStock: 5, category: "Sucré", image: "image/oréo.jpg" },
+    { id: 18, name: "M&M's", price: 0.80, stock: 0, minStock: 5, category: "Sucré", image: "image/M&Ms.jpg" },
+    { id: 19, name: "Bonbon", price: 0.50, stock: 0, minStock: 5, category: "Sucré", image: "image/bonbons.jpg" },
+    { id: 20, name: "Crêpe", price: 0.50, stock: 0, minStock: 5, category: "Sucré", image: "image/crepe.jpg" },
+    { id: 21, name: "Bouteille D'eau", price: 0.30, stock: 0, minStock: 5, category: "Boisson", image: "image/siropbouteille.jpg" },
+    { id: 22, name: "Coca Cherry", price: 0.30, stock: 0, minStock: 5, category: "Boisson", image: "image/siropbouteille.jpg" },
+    { id: 23, name: "Capris sun", price: 0.80, stock: 0, minStock: 5, category: "Boisson", image: "image/siropbouteille.jpg" },
+    { id: 24, name: "Fanta", price: 1.00, stock: 0, minStock: 5, category: "Boisson", image: "image/siropbouteille.jpg" },
+    { id: 25, name: "Jus de fruit", price: 0.60, stock: 0, minStock: 5, category: "Boisson", image: "image/siropbouteille.jpg" },
+    { id: 26, name: "MARS", price: 0.80, stock: 0, minStock: 5, category: "Sucré", image: "image/siropbouteille.jpg" },
+    { id: 27, name: "Compote", price: 0.40, stock: 0, minStock: 5, category: "Sucré", image: "image/siropbouteille.jpg" },
+    { id: 28, name: "Pain au chocolat", price: 0.40, stock: 0, minStock: 5, category: "Sucré", image: "image/siropbouteille.jpg" },
+    { id: 29, name: "Gaufre au sucre", price: 0.50, stock: 0, minStock: 5, category: "Sucré", image: "image/siropbouteille.jpg" },
+    { id: 30, name: "Kinder Bueno", price: 1.00, stock: 0, minStock: 5, category: "Sucré", image: "image/siropbouteille.jpg" },
+    { id: 31, name: "Kinder White", price: 1.00, stock: 0, minStock: 5, category: "Sucré", image: "image/siropbouteille.jpg" },
+    { id: 32, name: "Kit-Kat", price: 0.80, stock: 0, minStock: 5, category: "Sucré", image: "image/siropbouteille.jpg" },
+    { id: 33, name: "Lion", price: 0.80, stock: 0, minStock: 5, category: "Sucré", image: "image/siropbouteille.jpg" },
+    { id: 34, name: "Petit écolier", price: 0.90, stock: 0, minStock: 5, category: "Sucré", image: "image/siropbouteille.jpg" },
+    { id: 35, name: "Snickers", price: 0.80, stock: 0, minStock: 5, category: "Sucré", image: "image/siropbouteille.jpg" },
+
 ];
 
 let cart = [];
@@ -170,8 +186,13 @@ function renderProducts() {
             ? `<img src="${p.image}" alt="${p.name}" onerror="this.parentElement.innerHTML='📦'">` 
             : '📦';
         
-        const isOutOfStock = p.stock === 0;
-        const isLowStock = p.stock > 0 && p.stock <= p.minStock;
+        // Calculer le stock disponible en tenant compte du panier
+        const cartItem = cart.find(i => i.id === p.id);
+        const stockInCart = cartItem ? cartItem.quantity : 0;
+        const availableStock = p.stock - stockInCart;
+        
+        const isOutOfStock = availableStock <= 0;
+        const isLowStock = availableStock > 0 && p.stock <= p.minStock;
         const cardClass = isOutOfStock ? 'product-card out-of-stock' : isLowStock ? 'product-card low-stock' : 'product-card';
         
         return `
@@ -183,6 +204,7 @@ function renderProducts() {
                 <div class="product-price">${p.price.toFixed(2)} €</div>
                 <div class="product-stock" style="color: ${isOutOfStock ? '#dc2626' : isLowStock ? '#f59e0b' : '#10b981'}; font-weight: ${isOutOfStock || isLowStock ? '700' : '400'}">
                     ${isOutOfStock ? '❌ Rupture' : isLowStock ? '⚠️ Stock faible: ' + p.stock : '✓ Stock: ' + p.stock}
+                    ${stockInCart > 0 ? ` (${stockInCart} au panier)` : ''}
                 </div>
             </div>
         `;
