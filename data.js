@@ -1,3 +1,41 @@
+function renderStockTable(stockData) {
+    const tableBody = document.querySelector("#stock-table-body"); // Vérifiez bien cet ID dans votre HTML
+    if (!tableBody) return;
+
+    tableBody.innerHTML = ""; // On nettoie le tableau avant de le remplir
+
+    stockData.forEach(item => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+            <td class="px-4 py-3 font-medium text-gray-900">📦 ${item.nom}</td>
+            <td class="px-4 py-3 text-gray-600">${item.categorie}</td>
+            <td class="px-4 py-3 text-blue-600 font-bold">${item.prix} €</td>
+            <td class="px-4 py-3 font-bold ${item.stock <= item.min ? 'text-red-500' : 'text-gray-900'}">${item.stock}</td>
+            <td class="px-4 py-3 text-gray-500">${item.min}</td>
+            <td class="px-4 py-3">
+                <button onclick="promptUpdate('${item.id}', ${item.stock})" class="p-1 hover:bg-blue-100 rounded">📝</button>
+            </td>
+        `;
+        tableBody.appendChild(row);
+    });
+}
+
+// Petite fonction pour demander la nouvelle valeur
+window.promptUpdate = (id, currentStock) => {
+    const newVal = prompt("Nouveau stock :", currentStock);
+    if (newVal !== null) {
+        window.updateProductStock(id, newVal);
+    }
+};
+
+
+
+
+
+
+
+
+
 let products = [
     { id: 1, name: "Chocolat Chaud", price: 0.40, stock: 0, minStock: 5, category: "Boisson", image: "image/benco.jpg" },
     { id: 2, name: "Café", price: 0.30, stock: 0, minStock: 5, category: "Boisson", image: "image/café.jpg" },
@@ -1024,4 +1062,5 @@ window.addEventListener('DOMContentLoaded', () => {
     
     // Mettre à jour l'indicateur toutes les 10 secondes
     setInterval(updateLastSaveIndicator, 10000);
+
 });
