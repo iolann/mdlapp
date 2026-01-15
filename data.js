@@ -45,7 +45,7 @@ let products = [
     { id: 6, name: "Lipton", price: 1.00, stock: 50, minStock: 5, category: "Boisson", image: "https://i.imgur.com/CcOp5qL.png" },
     { id: 7, name: "Recharge Sirop", price: 0.20, stock: 50, minStock: 5, category: "Boisson", image: "https://i.imgur.com/MzlXi9M.png" },
     { id: 8, name: "Bouteille Sirop", price: 0.50, stock: 50, minStock: 5, category: "Boisson", image: "https://i.imgur.com/JIkrK5C.jpeg" },
-    { id: 9, name: "Diabolo", price: 1.00, stock: 50, minStock: 5, category: "Boisson", image: "ihttps://i.imgur.com/fNcED3j.jpeg" },
+    { id: 9, name: "Diabolo", price: 1.00, stock: 50, minStock: 5, category: "Boisson", image: "https://i.imgur.com/fNcED3j.jpeg" },
     { id: 10, name: "Thé", price: 0.30, stock: 50, minStock: 5, category: "Boisson", image: "https://i.imgur.com/1YX7DVu.png" },
     { id: 11, name: "Chips BBQ", price: 0.60, stock: 50, minStock: 5, category: "Salé", image: "https://i.imgur.com/BWB8Gs6.jpeg" },
     { id: 12, name: "Chips Nature", price: 0.50, stock: 50, minStock: 5, category: "Salé", image: "https://i.imgur.com/GbuQeeK.jpeg" },
@@ -70,8 +70,8 @@ let products = [
     { id: 31, name: "Kinder White", price: 1.00, stock: 50, minStock: 5, category: "Sucré", image: "https://i.imgur.com/qLjwjnN.jpeg" },
     { id: 32, name: "Kit-Kat", price: 0.80, stock: 50, minStock: 5, category: "Sucré", image: "https://i.imgur.com/wVNSHet.jpeg" },
     { id: 33, name: "Lion", price: 0.80, stock: 50, minStock: 5, category: "Sucré", image: "https://i.imgur.com/gUaLaX6.jpeg" },
-    { id: 34, name: "Petit écolier", price: 0.90, stock: 50, minStock: 5, category: "Sucré", image: "https://imgur.com/Qlen1v2" },
-    { id: 35, name: "Snickers", price: 0.80, stock: 50, minStock: 5, category: "Sucré", image: "https://imgur.com/3Nv8s3o" },
+    { id: 34, name: "Petit écolier", price: 0.90, stock: 50, minStock: 5, category: "Sucré", image: "https://imgur.com/Qlen1v2.jpeg" },
+    { id: 35, name: "Snickers", price: 0.80, stock: 50, minStock: 5, category: "Sucré", image: "https://imgur.com/3Nv8s3o.jpeg" },
 
 ];
 
@@ -1064,6 +1064,7 @@ window.addEventListener('DOMContentLoaded', () => {
     setInterval(updateLastSaveIndicator, 10000);
 
 });
+
 
 
 
