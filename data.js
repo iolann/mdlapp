@@ -58,7 +58,7 @@ let products = [
     { id: 19, name: "Bonbon", price: 0.50, stock: 50, minStock: 5, category: "Sucré", image: "https://i.imgur.com/INNmcv2.jpeg" },
     { id: 20, name: "Crêpe", price: 0.50, stock: 50, minStock: 5, category: "Sucré", image: "https://i.imgur.com/towWgb1.jpeg" },
     { id: 21, name: "Bouteille D'eau", price: 0.30, stock: 50, minStock: 5, category: "Boisson", image: "https://i.imgur.com/qqfy8z2.png" },
-    { id: 22, name: "Coca Cherry", price: 0.30, stock: 50, minStock: 5, category: "Boisson", image: "https://i.imgur.com/AUchAzc.png" },
+    { id: 22, name: "Coca Cherry", price: 1.00, stock: 50, minStock: 5, category: "Boisson", image: "https://i.imgur.com/AUchAzc.png" },
     { id: 23, name: "Capris sun", price: 0.80, stock: 50, minStock: 5, category: "Boisson", image: "https://i.imgur.com/HYzEqP8.png" },
     { id: 24, name: "Fanta", price: 1.00, stock: 50, minStock: 5, category: "Boisson", image: "https://i.imgur.com/sWa34ZC.png" },
     { id: 25, name: "Jus de fruit", price: 0.60, stock: 50, minStock: 5, category: "Boisson", image: "https://i.imgur.com/k4thZrL.jpeg" },
@@ -1064,6 +1064,7 @@ window.addEventListener('DOMContentLoaded', () => {
     setInterval(updateLastSaveIndicator, 10000);
 
 });
+
 
 
 
