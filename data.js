@@ -48,7 +48,7 @@ let products = [
     { id: 9, name: "Diabolo", price: 1.00, stock: 50, minStock: 5, category: "Boisson", image: "ihttps://i.imgur.com/fNcED3j.jpeg" },
     { id: 10, name: "Thé", price: 0.30, stock: 50, minStock: 5, category: "Boisson", image: "https://i.imgur.com/1YX7DVu.png" },
     { id: 11, name: "Chips BBQ", price: 0.60, stock: 50, minStock: 5, category: "Salé", image: "https://i.imgur.com/BWB8Gs6.jpeg" },
-    { id: 12, name: "Chips Nature", price: 0.50, stock: 50, minStock: 5, category: "Salé", image: "https://i.imgur.com/GbuQeeK.jpeg },
+    { id: 12, name: "Chips Nature", price: 0.50, stock: 50, minStock: 5, category: "Salé", image: "https://i.imgur.com/GbuQeeK.jpeg" },
     { id: 13, name: "Chips Poulet", price: 0.60, stock: 50, minStock: 5, category: "Salé", image: "https://i.imgur.com/VfhMGFs.jpeg" },
     { id: 14, name: "Saucisson", price: 3.00, stock: 50, minStock: 5, category: "Salé", image: "https://i.imgur.com/gIUaT8f.png" },
     { id: 15, name: "Croissant", price: 0.50, stock: 50, minStock: 5, category: "Sucré", image: "https://i.imgur.com/nausb7X.png" },
@@ -1064,5 +1064,6 @@ window.addEventListener('DOMContentLoaded', () => {
     setInterval(updateLastSaveIndicator, 10000);
 
 });
+
 
 
