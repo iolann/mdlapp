@@ -39,7 +39,7 @@ window.promptUpdate = (id, currentStock) => {
 let products = [
     { id: 1, name: "Chocolat Chaud", price: 0.40, stock: 50, minStock: 5, category: "Boisson", image: "https://i.imgur.com/ectBZ3z.jpeg" },
     { id: 2, name: "Café", price: 0.30, stock: 50, minStock: 5, category: "Boisson", image: "https://i.imgur.com/iLMjUw7.jpeg" },
-    { id: 3, name: "Café au lait", price: 0.40, stock: 50, minStock: 5, category: "Boisson", image: "ihttps://i.imgur.com/rRvMU2t.jpeg" },
+    { id: 3, name: "Café au lait", price: 0.40, stock: 50, minStock: 5, category: "Boisson", image: "https://i.imgur.com/rRvMU2t.jpeg" },
     { id: 4, name: "Coca-Cola", price: 1.00, stock: 50, minStock: 5, category: "Boisson", image: "https://i.imgur.com/ujBdkp2.png" },
     { id: 5, name: "Oasis Pomme-Cassis", price: 1.00, stock: 50, minStock: 5, category: "Boisson", image: "https://i.imgur.com/GpVjXEg.jpeg" },
     { id: 6, name: "Lipton", price: 1.00, stock: 50, minStock: 5, category: "Boisson", image: "https://i.imgur.com/CcOp5qL.png" },
@@ -1064,6 +1064,7 @@ window.addEventListener('DOMContentLoaded', () => {
     setInterval(updateLastSaveIndicator, 10000);
 
 });
+
 
 
 
