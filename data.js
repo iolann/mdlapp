@@ -72,7 +72,7 @@ let products = [
     { id: 33, name: "Lion", price: 0.80, stock: 50, minStock: 5, category: "Sucré", image: "https://i.imgur.com/gUaLaX6.jpeg" },
     { id: 34, name: "Petit écolier", price: 0.90, stock: 50, minStock: 5, category: "Sucré", image: "https://imgur.com/Qlen1v2.jpeg" },
     { id: 35, name: "Snickers", price: 0.80, stock: 50, minStock: 5, category: "Sucré", image: "https://imgur.com/3Nv8s3o.jpeg" },
-
+    { id: 36, name: "Oréo", price: 0.50, stock: 50, minStock: 5, category: "Sucré", image: "https://imgur.com/3Nv8s3o.jpeg" },
 ];
 
 let cart = [];
@@ -1064,6 +1064,7 @@ window.addEventListener('DOMContentLoaded', () => {
     setInterval(updateLastSaveIndicator, 10000);
 
 });
+
 
 
 
