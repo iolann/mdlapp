@@ -13,45 +13,42 @@
     <link rel="stylesheet" href="style.css">
     <script src="data.js"></script>
     
-<script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-    // On utilise 'database' et non 'firestore'
-    import { getDatabase, ref, onValue, update } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getDatabase, ref, onValue, update } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
 
-    const firebaseConfig = {
-        apiKey: "AIzaSyBiT-RfkaPF5W-lDWfB54gRktncdcO4CAA",
-        authDomain: "gestion-mdl.firebaseapp.com",
-        // L'URL de votre base visible sur l'image
-        databaseURL: "https://gestion-mdl-default-rtdb.europe-west1.firebasedatabase.app", 
-        projectId: "gestion-mdl",
-        storageBucket: "gestion-mdl.firebasestorage.app",
-        messagingSenderId: "665941438924",
-        appId: "1:665941438924:web:6564b119544b3bf129ed69"
-    };
+        const firebaseConfig = {
+            apiKey: "AIzaSyBiT-RfkaPF5W-lDWfB54gRktncdcO4CAA",
+            authDomain: "gestion-mdl.firebaseapp.com",
+            databaseURL: "https://gestion-mdl-default-rtdb.europe-west1.firebasedatabase.app", 
+            projectId: "gestion-mdl",
+            storageBucket: "gestion-mdl.firebasestorage.app",
+            messagingSenderId: "665941438924",
+            appId: "1:665941438924:web:6564b119544b3bf129ed69"
+        };
 
-    const app = initializeApp(firebaseConfig);
-    const db = getDatabase(app);
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
 
-    // --- SYNCHRONISATION DU TABLEAU ---
-    const stockRef = ref(db, 'stock');
-    onValue(stockRef, (snapshot) => {
-        const data = snapshot.val();
-        if (data) {
-            // Transforme l'objet Firebase en tableau pour votre interface
-            const stockArray = Object.keys(data).map(key => ({
-                id: key,
-                ...data[key]
-            }));
-            renderStockTable(stockArray);
-        }
-    });
+        const stockRef = ref(db, 'stock');
+        onValue(stockRef, (snapshot) => {
+            const data = snapshot.val();
+            if (data) {
+                const stockArray = Object.keys(data).map(key => ({
+                    id: key,
+                    ...data[key]
+                }));
+                if (typeof renderStockTable === 'function') {
+                    renderStockTable(stockArray);
+                }
+            }
+        });
 
-    // --- FONCTION DE MISE À JOUR ---
-    window.updateProductStock = async (id, newStock) => {
-        const productRef = ref(db, `stock/${id}`);
-        await update(productRef, { stock: Number(newStock) });
-    };
-
+        window.updateProductStock = async (id, newStock) => {
+            const productRef = ref(db, `stock/${id}`);
+            await update(productRef, { stock: Number(newStock) });
+        };
+    </script>
 </head>
 <body>
     <header>
@@ -97,7 +94,6 @@
         </div>
     </nav>
 
-    <!-- Content -->
     <div class="container">
         <!-- CAISSE -->
         <div id="tab-caisse" class="content-section active">
@@ -200,7 +196,6 @@
 
             <!-- Graphiques et analyses -->
             <div style="display: grid; grid-template-columns: 1fr; gap: 1rem; margin-bottom: 1rem;">
-                <!-- Graphique évolution CA -->
                 <div class="card">
                     <div class="card-header">
                         <h3 class="card-title">📈 Évolution du CA</h3>
@@ -316,6 +311,7 @@
     </div>
 </body>
 </html>
+
 
 
 
