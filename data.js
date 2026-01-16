@@ -53,7 +53,7 @@ let products = [
     { id: 14, name: "Saucisson", price: 3.00, stock: 50, minStock: 5, category: "Salé", image: "https://i.imgur.com/gIUaT8f.png" },
     { id: 15, name: "Croissant", price: 0.50, stock: 50, minStock: 5, category: "Sucré", image: "https://i.imgur.com/nausb7X.png" },
     { id: 16, name: "Twix", price: 0.80, stock: 50, minStock: 5, category: "Sucré", image: "https://i.imgur.com/mrHe43P.png" },
-    { id: 17, name: "Oréo", price: 0.50, stock: 50, minStock: 5, category: "Sucré", image: "https://i.imgur.com/bBEQB6o.jpeg" },
+    { id: 17, name: "Oréo White", price: 0.60, stock: 50, minStock: 5, category: "Sucré", image: "https://i.imgur.com/bBEQB6o.jpeg" },
     { id: 18, name: "M&M's", price: 0.80, stock: 50, minStock: 5, category: "Sucré", image: "https://i.imgur.com/8STAL8O.jpeg" },
     { id: 19, name: "Bonbon", price: 0.50, stock: 50, minStock: 5, category: "Sucré", image: "https://i.imgur.com/INNmcv2.jpeg" },
     { id: 20, name: "Crêpe", price: 0.50, stock: 50, minStock: 5, category: "Sucré", image: "https://i.imgur.com/towWgb1.jpeg" },
@@ -70,9 +70,10 @@ let products = [
     { id: 31, name: "Kinder White", price: 1.00, stock: 50, minStock: 5, category: "Sucré", image: "https://i.imgur.com/qLjwjnN.jpeg" },
     { id: 32, name: "Kit-Kat", price: 0.80, stock: 50, minStock: 5, category: "Sucré", image: "https://i.imgur.com/wVNSHet.jpeg" },
     { id: 33, name: "Lion", price: 0.80, stock: 50, minStock: 5, category: "Sucré", image: "https://i.imgur.com/gUaLaX6.jpeg" },
-    { id: 34, name: "Petit écolier", price: 0.90, stock: 50, minStock: 5, category: "Sucré", image: "https://imgur.com/Qlen1v2.jpeg" },
+    { id: 34, name: "Petit écolier", price: 0.80, stock: 50, minStock: 5, category: "Sucré", image: "https://imgur.com/Qlen1v2.jpeg" },
     { id: 35, name: "Snickers", price: 0.80, stock: 50, minStock: 5, category: "Sucré", image: "https://imgur.com/3Nv8s3o.jpeg" },
-    { id: 36, name: "Oréo", price: 0.50, stock: 50, minStock: 5, category: "Sucré", image: "https://imgur.com/3Nv8s3o.jpeg" },
+    { id: 36, name: "Oréo", price: 0.50, stock: 50, minStock: 5, category: "Sucré", image: "https://imgur.com/LAil4sT.jpeg" },
+    { id: 37, name: "Gaufre Chocolat", price: 0.60, stock: 50, minStock: 5, category: "Sucré", image: "https://imgur.com/M3ZX9JA.jpeg" },
 ];
 
 let cart = [];
@@ -1064,6 +1065,7 @@ window.addEventListener('DOMContentLoaded', () => {
     setInterval(updateLastSaveIndicator, 10000);
 
 });
+
 
 
 
